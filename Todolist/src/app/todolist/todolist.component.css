@@ -1,0 +1,39 @@
+/* Style for the todo list container */
+.todo-list {
+    margin-top: 20px;
+  }
+  
+  /* Style for individual todo items */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Style for the checkbox */
+  .todo-item input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Style for completed tasks */
+  .completed-task {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Style for the delete button */
+  .todo-item button {
+    padding: 4px 8px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-item button:hover {
+    background-color: #d94631;
+  }
+  

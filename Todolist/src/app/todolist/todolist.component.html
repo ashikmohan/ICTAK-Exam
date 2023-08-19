@@ -1,0 +1,8 @@
+<div class="todo-list">
+    <div *ngFor="let task of tasks" class="todo-item">
+      <input type="checkbox" [(ngModel)]="task.status" (change)="toggleTaskStatus(task)">
+      <span [ngClass]="{'completed-task': task.status === 'completed'}">{{ task.description }}</span> &nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="deleteTask(task._id)">Delete</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,100 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  /* Main container */
+  div {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+  }
+  
+  /* Header */
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Filter */
+  .app-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Todo List */
+  .app-todolist {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Input and Button */
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  /* Colorful Text */
+  .colorful-text {
+    background-image: linear-gradient(to right, #f06, #9f6);
+    
+    color: transparent;
+  }
+  
+  /* Colorful Button */
+  .colorful-button {
+    background-image: linear-gradient(to right, #f06, #9f6);
+    color: #fff;
+    background-size: 200% auto;
+    transition: background-position 0.5s ease;
+  }
+  
+  .colorful-button:hover {
+    background-position: -100% center;
+  }
+  

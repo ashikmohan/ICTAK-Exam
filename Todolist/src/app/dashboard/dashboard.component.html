@@ -1,0 +1,11 @@
+<div>
+    <h2>Todo Dashboard</h2>
+    <app-filter (filterApplied)="applyFilter($event)"></app-filter>
+    <app-todolist [tasks]="filteredTasks"></app-todolist>
+
+    <div>
+      <input [(ngModel)]="newTaskDescription" placeholder="Enter new task description">&nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="addTask()">Add Task</button>
+    </div>
+  </div>
+  
